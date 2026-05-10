@@ -1,0 +1,7 @@
+//build the folder 
+dotnet new console -lang "F#" -o NumberGuessingGame
+
+//export as an exe 
+dotnet publish -c Release -r win-x64 --self-contained true /p:PublishSingleFile=true
+
+//exe file will be located in this path bin/Release/net10.0/win-x64/publish/
